@@ -361,6 +361,7 @@
     <Compile Include="Assets\VRTK\Scripts\Utilities\VRTK_SharedMethods.cs" />
     <Compile Include="Assets\VRTK\Scripts\Utilities\VRTK_Simulator.cs" />
     <Compile Include="Assets\changeMaterial.cs" />
+    <Compile Include="Assets\changeMaterialBack.cs" />
     <Compile Include="Assets\mic.cs" />
   </ItemGroup>
   <ItemGroup>
