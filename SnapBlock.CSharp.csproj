@@ -360,6 +360,7 @@
     <Compile Include="Assets\VRTK\Scripts\Utilities\VRTK_SDKManager.cs" />
     <Compile Include="Assets\VRTK\Scripts\Utilities\VRTK_SharedMethods.cs" />
     <Compile Include="Assets\VRTK\Scripts\Utilities\VRTK_Simulator.cs" />
+    <Compile Include="Assets\mic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\BrokenVector\FreeLowPolyPack\readme.txt" />
