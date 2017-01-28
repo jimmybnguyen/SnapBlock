@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapBlock.CSharp", "SnapBlock.CSharp.csproj", "{FB98378F-649D-91E9-B81E-58FB40658C88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnapBlock.CSharp.Editor", "SnapBlock.CSharp.Editor.csproj", "{061E995B-581B-14D7-D0BA-268B3B77D362}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB98378F-649D-91E9-B81E-58FB40658C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB98378F-649D-91E9-B81E-58FB40658C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB98378F-649D-91E9-B81E-58FB40658C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB98378F-649D-91E9-B81E-58FB40658C88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{061E995B-581B-14D7-D0BA-268B3B77D362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{061E995B-581B-14D7-D0BA-268B3B77D362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{061E995B-581B-14D7-D0BA-268B3B77D362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{061E995B-581B-14D7-D0BA-268B3B77D362}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
