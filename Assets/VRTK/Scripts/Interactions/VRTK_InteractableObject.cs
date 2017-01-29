@@ -39,6 +39,8 @@ namespace VRTK
     /// </example>
     public class VRTK_InteractableObject : MonoBehaviour
     {
+        public bool hold = false;
+        
         /// <summary>
         /// Allowed controller type.
         /// </summary>
@@ -260,6 +262,7 @@ namespace VRTK
             return (grabbingObjects.Count > 0);
         }
 
+
         /// <summary>
         /// The IsUsing method is used to determine if the object is currently being used.
         /// </summary>
@@ -309,13 +312,16 @@ namespace VRTK
         public virtual void Grabbed(GameObject currentGrabbingObject)
         {
             ToggleEnableState(true);
+            
             if (!IsGrabbed() || IsSwappable())
             {
+                hold = true;
                 PrimaryControllerGrab(currentGrabbingObject);
             }
             else
             {
-                SecondaryControllerGrab(currentGrabbingObject);
+                
+               SecondaryControllerGrab(currentGrabbingObject);
             }
             OnInteractableObjectGrabbed(SetInteractableObjectEvent(currentGrabbingObject));
         }
@@ -329,6 +335,7 @@ namespace VRTK
             var secondaryGrabbingObject = GetSecondaryGrabbingObject();
             if (!secondaryGrabbingObject || secondaryGrabbingObject != previousGrabbingObject)
             {
+                hold = false;
                 SecondaryControllerUngrab(secondaryGrabbingObject);
                 PrimaryControllerUngrab(previousGrabbingObject);
             }
